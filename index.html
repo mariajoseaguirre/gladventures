@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+        </style>
+    <title>GLADVENTURES</title>
+</head>
+<body>
+    <!--Inicio del header-->
+    <header>
+        <div class="wow animate__animated animate__pulse"><nav class="navBar">
+            <ul class="listasNavBar">
+                <li><a href="pages/venezuela.html" class="nombrePais">VENEZUELA</a></li>
+                <li><a href="pages/chile.html" class="nombrePais">CHILE</a></li>
+                <li><a href="index.html" id="logo">GLADVENTURES</a></li>
+                <li><a href="pages/peru.html"class="nombrePais">PERU</a></li>
+                <li><a href="pages/argentina.html" class="nombrePais">ARGENTINA</a></li>
+            </ul>
+        </nav></div>
+    </header>
+    <!--Fin del header y nav bar-->
+    <main>
+        <!--Se divide el main en 3 secciones de texto con imagen o video-->
+        <section class="gladContainer wow animate__animated animate__fadeInLeftBig">
+            <div><img src="media/saltoangel.jpg" class="img" alt="Salto Angel, Venezuela"></div>
+            <div class="texto"><h2>NUESTROS DESTINOS</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus qui, repellat obcaecati consequatur mollitia nam fuga repellendus praesentium est ea molestiae porro totam veniam perferendis rerum vitae tempore earum alias incidunt quasi suscipit. Earum optio maxime quibusdam quos iure odit culpa dignissimos! Totam a accusamus quaerat numquam earum sequi.</P><div>
+        </section>
+        <section class="gladContainer wow animate__animated animate__fadeInRightBig">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ChOhcHD8fBA" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="texto">
+            <h2>VIAJA CON NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia quae esse ullam tempora atque, asperiores ipsam impedit dolorum ut! Quod nemo soluta placeat aliquid perspiciatis illo, eaque odit, asperiores suscipit laudantium quidem doloribus deleniti iure non beatae eius debitis explicabo, libero magni quae? Ducimus at rerum saepe possimus veniam!</p>
+          </div>
+        </section>
+        <section class="gladContainer wow animate__animated animate__fadeInLeftBig">
+            <img class="img" src="media/machupicchu.jpg" alt="Machu Picchu, Peru">
+            <div class="texto formulario"><form action="" method="get" enctype="multipart/form-data">
+                <fieldset class="formulario">
+                    <legend><h2>CONTACTANOS</h2></legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <label for="numerodetelefono">Numero de telefono:</label>
+                    <input type="text" name="numerodetelefono" placeholder="Numero de telefono">
+                    <label for="correoelectronico">Correo electronico</label>
+                    <input type="text" name="correoelectronico" placeholder="example@gmail.com">
+                   <label for="adondequieresir">¿A donde quieres ir?</label>
+                   <select name="pais" id="pais">
+                   <option value="venezuela">Venezuela</option>
+                   <option value="chile">Chile</option>
+                   <option value="peru">Peru</option>
+                   <option value="argentina">Argentina</option>
+                </select>
+                   <label for="comentarios">Comentarios:</label>
+                   <input type="text" name="comentarios" value="Me gustaria viajar con ustedes a...">
+                   <input type="submit" name="enviar" value="Enviar">
+                </fieldset>
+            </form></div>
+        </section>
+    </main>
+    <!--Inicio del footer-->
+        <footer class="footer wow animate__animated animate__pulse">
+            <ul class="listasFooter">
+                <div><li><a href="index.html" id="logo">Gladventures</a></li></div>
+                <div><li><a href="pages/venezuela.html" class="nombrePais">Venezuela</a></li>
+                <li><a href="pages/chile.html" class="nombrePais">Chile</a></li>
+                <li><a href="pages/peru.html" class="nombrePais">Peru</a></li>
+                <li><a href="pages/argentina.html" class="nombrePais">Argentina</a></li></div>
+                <div><li><a href="https://www.instagram.com/" target="_blank" class="redesSociales">Instagram</a></li>
+                <li><a href="https://es-la.facebook.com/" target="_blank" class="redesSociales">Facebook</a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank" class="redesSociales">Twitter</a></li>
+                <li><a href="https://www.youtube.com/premium" target="_blank" class="redesSociales">Youtube</a></li></div>
+            </ul>
+        </footer>
+
+</body>
+</html>
