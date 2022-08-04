@@ -8,11 +8,7 @@ body{
     background-color: beige;
     font-family: 'Roboto', sans-serif;
 }
-.navBar{
-    background-color: green;
-    text-align: center;
-    margin: 20px 20px 20px 20px;
-}
+
 /* se utilizo para todas las listas*/
 .listasNavBar, .listasFooter{
     list-style: none;
@@ -155,4 +151,27 @@ fieldset{
     display: flex;
     flex-direction: column;
 }
+}
+
+.navbar{
+    /* background-color: green; */
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+.container-fluid{
+    background-color: green;
+}
+
+footer{
+    background-color: green;
+    color: white;
+}
+
+.row{
+    color: white;
+}
+
+.textoFooter{
+    padding: 4rem;
 }
