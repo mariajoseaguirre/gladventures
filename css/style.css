@@ -67,34 +67,16 @@ body{
     display: flex;
 }
 
-@media screen and (max-width:390px) {
-
-    
+@media screen and (min-width:320px) {
 
     .img{
-        width: 20em;
+        width: 100%;
         height: auto;
     }
 
     #video{
-        width: 20em;
-        height: auto;
-    }
-    
-    .listasNavBar{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    .listasFooter {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        width: 100%;
+        height: 100%;
     }
     
     /*Aplicando grid para el main*/
@@ -116,23 +98,6 @@ body{
 }
 
 @media screen and (min-width: 768px)  {
-    /*Aplicando flexbox para el nav bar y footer*/
-
-.listasNavBar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.listasFooter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
 
 /*Aplicando grid para el main*/
 
@@ -141,6 +106,11 @@ body{
     grid-template-columns: 2fr 2fr;
     justify-content: space-around;
     align-items: center;
+}
+
+.texto{
+    margin: 10px;
+    padding: 10px;
 }
 
 /*Para acomodar formulario*/
@@ -153,25 +123,54 @@ fieldset{
 }
 }
 
+/*NavBar con bootstrap*/
+
 .navbar{
-    /* background-color: green; */
-    text-align: center;
     margin: 20px 20px 20px 20px;
+    text-align: center;
 }
 
 .container-fluid{
     background-color: green;
 }
 
+.navbar-brand{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+
 footer{
     background-color: green;
+}
+
+.textFooter{
     color: white;
+    font-weight: bold;
 }
 
 .row{
     color: white;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }
 
-.textoFooter{
-    padding: 4rem;
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.logonav{
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
 }
