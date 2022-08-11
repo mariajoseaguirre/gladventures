@@ -1,0 +1,85 @@
+@import "header";
+@import "variables";
+@import "footer";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos generales*/
+body{
+    background-color: $colorfondo;
+    font-family: 'Roboto', sans-serif;
+    .tituloPais{
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .gladContainer{
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+        border: 5px solid $colorprincipal;
+        border-radius: 15px;
+        .texto{
+            font-size: 20px;
+        }
+        
+    }
+}
+
+@media screen and (min-width:320px) {
+
+    .img{
+        width: 100%;
+        height: auto;
+    }
+
+    #video{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*Aplicando grid para el main*/
+    
+    .gladContainer{
+        display: flex;
+        flex-direction: column;
+        font-size: x-small;
+    }
+    
+    /*Para acomodar formulario*/
+    
+    fieldset{
+        font-size: x-small;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px)  {
+
+/*Aplicando grid para el main*/
+
+.gladContainer{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto{
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Para acomodar formulario*/
+
+fieldset{
+    font-size: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+}

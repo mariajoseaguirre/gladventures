@@ -1,0 +1,22 @@
+@import"variables";
+
+footer{
+    background-color: $colorprincipal;
+}
+
+.textFooter{
+    color: white;
+    font-weight: bold;
+}
+
+.row{
+    color: white;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,27 @@
+@import "variables";
+.navbar{
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.container-fluid{
+    background-color: $colorprincipal;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 25px;
+    justify-content: space-around;
+}
+.logonav{
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}

@@ -1,176 +1,119 @@
-*{
-    margin: 0;
-    padding: 0;
+.navbar {
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.container-fluid {
+  background-color: green;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 25px;
+  justify-content: space-around;
+}
+
+.logonav {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: green;
+}
+
+.textFooter {
+  color: white;
+  font-weight: bold;
+}
+
+.row {
+  color: white;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*Estilos generales*/
-body{
-    background-color: beige;
-    font-family: 'Roboto', sans-serif;
+body {
+  background-color: beige;
+  font-family: "Roboto", sans-serif;
+}
+body .tituloPais {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+body .gladContainer {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border: 5px solid green;
+  border-radius: 15px;
+}
+body .gladContainer .texto {
+  font-size: 20px;
 }
 
-/* se utilizo para todas las listas*/
-.listasNavBar, .listasFooter{
-    list-style: none;
-}
-
-/*para diferenciar el nombre de los paises y el logo*/
-.nombrePais{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-#logo{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.gladContainer{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border: 5px solid green;
-    border-radius: 15px;
-}
-
-.img{
-    width: auto;
-    height: 315px;
-}
-
-.texto{
-    font-size: 20px;
-}
-
-.footer{
-    background-color: green;
-    text-align: center;
-    margin: 20px 20px 20px 20px;
-    font-size: 25px;
-}
-.redesSociales{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.tituloPais{
-    text-align: center;
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-.listasNavBar, .listasFooter {
+@media screen and (min-width: 320px) {
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  #video {
+    width: 100%;
+    height: 100%;
+  }
+  /*Aplicando grid para el main*/
+  .gladContainer {
     display: flex;
+    flex-direction: column;
+    font-size: x-small;
+  }
+  /*Para acomodar formulario*/
+  fieldset {
+    font-size: x-small;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
 }
-
-@media screen and (min-width:320px) {
-
-    .img{
-        width: 100%;
-        height: auto;
-    }
-
-    #video{
-        width: 100%;
-        height: 100%;
-    }
-    
-    /*Aplicando grid para el main*/
-    
-    .gladContainer{
-        display: flex;
-        flex-direction: column;
-        font-size: x-small;
-    }
-    
-    /*Para acomodar formulario*/
-    
-    fieldset{
-        font-size: x-small;
-        border: none;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width: 768px)  {
-
-/*Aplicando grid para el main*/
-
-.gladContainer{
+@media screen and (min-width: 768px) {
+  /*Aplicando grid para el main*/
+  .gladContainer {
     display: grid;
     grid-template-columns: 2fr 2fr;
     justify-content: space-around;
     align-items: center;
-}
-
-.texto{
+  }
+  .texto {
     margin: 10px;
     padding: 10px;
-}
-
-/*Para acomodar formulario*/
-
-fieldset{
+  }
+  /*Para acomodar formulario*/
+  fieldset {
     font-size: 20px;
     border: none;
     display: flex;
     flex-direction: column;
-}
-}
-
-/*NavBar con bootstrap*/
-
-.navbar{
-    margin: 20px 20px 20px 20px;
-    text-align: center;
+  }
 }
 
-.container-fluid{
-    background-color: green;
-}
-
-.navbar-brand{
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.nav-link{
-    color: white;
-    font-size: 25px;
-    justify-content: space-around;
-}
-
-
-footer{
-    background-color: green;
-}
-
-.textFooter{
-    color: white;
-    font-weight: bold;
-}
-
-.row{
-    color: white;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-}
-
-.logo{
-    width: 100%;
-    height: auto;
-}
-
-.logonav{
-    width: 64px;
-    height: 64px;
-    margin-right: 10px;
-}
+/*# sourceMappingURL=style.css.map */
