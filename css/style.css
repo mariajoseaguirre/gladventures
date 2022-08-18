@@ -54,7 +54,7 @@ footer {
 
 /*Estilos generales*/
 body {
-  background-color: beige;
+  background-color: rgb(238, 238, 227);
   font-family: "Roboto", sans-serif;
 }
 body .tituloPais {
@@ -62,13 +62,13 @@ body .tituloPais {
   font-size: 25px;
   text-transform: uppercase;
 }
-body .gladContainer {
+body .gladContainer, body .gladContainerExt {
   margin: 10px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
   border: 5px solid green;
   border-radius: 15px;
 }
-body .gladContainer .texto {
+body .gladContainer .texto, body .gladContainerExt .texto, body .gladContainer .textExt, body .gladContainerExt .textExt {
   font-size: 20px;
 }
 
@@ -82,10 +82,9 @@ body .gladContainer .texto {
     height: 100%;
   }
   /*Aplicando grid para el main*/
-  .gladContainer {
+  .gladContainer, .gladContainerExt {
     display: flex;
     flex-direction: column;
-    font-size: x-small;
   }
   /*Para acomodar formulario*/
   fieldset {
@@ -97,13 +96,13 @@ body .gladContainer .texto {
 }
 @media screen and (min-width: 768px) {
   /*Aplicando grid para el main*/
-  .gladContainer {
+  .gladContainer, .gladContainerExt {
     display: grid;
     grid-template-columns: 2fr 2fr;
     justify-content: space-around;
     align-items: center;
   }
-  .texto {
+  .texto, .textExt {
     margin: 10px;
     padding: 10px;
   }
