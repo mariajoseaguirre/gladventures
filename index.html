@@ -23,7 +23,33 @@
 <body>
     <!--Inicio del header-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+      <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="media/glaciarPerito.png" alt="Glaciar Perito Moreno"></img>
+          </div>
+          <div class="carousel-item">
+            <img src="media/roraimabanner.png" class="d-block w-100" alt="Monte Roraima">
+          </div>
+          <div class="carousel-item">
+            <img src="media/torresdelpaine.png" class="d-block w-100" alt="Torres del Paine">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand mx-auto" href="index.html"><img src="media/Logo.png" alt="Logo Gladventures" class="logonav">GLADVENTURES</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +64,7 @@
                     <a class="nav-link" href="pages/chile.html">Chile</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/peru.html">Peru</a>
+                    <a class="nav-link" href="pages/peru.html">Perú</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="pages/argentina.html">Argentina</a>
@@ -51,11 +77,11 @@
     <!--Fin del header y nav bar-->
     <main>
         <!--Se divide el main en 3 secciones de texto con imagen o video-->
-        <section class="gladContainerExt wow animate__animated animate__fadeInLeftBig">
-            <div><img src="media/saltoangel.jpg" class="img" alt="Salto Angel, Venezuela"></div>
+        <section class="gladContainer wow animate__animated animate__fadeInLeftBig">
+            <img src="media/saltoangel.jpg" class="img" alt="Salto Angel, Venezuela">
             <div class="texto"><h2>NUESTROS DESTINOS</h2>
-            <p>Te ofrecemos hacer turismo de aventura por Sudamérica, ya que nos enfocamos en ensenar lo mejor de nuestro continente.
-            Ya que muchas veces olvidamos las todas las maravillas naturales que tenemos cerca de casa.</p><div>
+            <p>Te ofrecemos hacer turismo de aventura por Sudamérica, ya que nos enfocamos en enseñar lo mejor de nuestro continente.
+            Ya que muchas veces olvidamos las todas las maravillas naturales que tenemos cerca de casa. Cada país tiene su propia belleza natural y tradiciones históricas. Ahora que el turismo de aventura se está volviendo más común en América del Sur y muchos lugares están comenzando a ver un aumento en el número de visitantes.</p><div>
         </section>
         <section class="gladContainer wow animate__animated animate__fadeInRightBig">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ChOhcHD8fBA" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -71,15 +97,15 @@
                     <legend><h2>CONTACTANOS</h2></legend>
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" placeholder="Nombre">
-                    <label for="numerodetelefono">Numero de telefono:</label>
-                    <input type="text" name="numerodetelefono" placeholder="Numero de telefono">
-                    <label for="correoelectronico">Correo electronico</label>
-                    <input type="text" name="correoelectronico" placeholder="example@gmail.com">
+                    <label for="numerodetelefono">Número de telefono:</label>
+                    <input type="text" name="numerodetelefono" placeholder="Número de telefono">
+                    <label for="correoelectronico">Correo electrónico</label>
+                    <input type="text" name="correoelectronico" placeholder="correo@example.com">
                    <label for="adondequieresir">¿A donde quieres ir?</label>
                    <select name="pais" id="pais">
                    <option value="venezuela">Venezuela</option>
                    <option value="chile">Chile</option>
-                   <option value="peru">Peru</option>
+                   <option value="peru">Perú</option>
                    <option value="argentina">Argentina</option>
                 </select>
                    <label for="comentarios">Comentarios:</label>
@@ -90,36 +116,34 @@
         </section>
     </main>
     <!--Inicio del footer-->
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-          <a href="index.html" class="textFooter display-6 d-flex mb-3 text-decoration-none"><img src="media/Logo.png" alt="Logo Gladventures" class="logo"></a>
-        </div>
-    
-        <div class="col mb-3">
-    
-        </div>
-    
-        <div class="col mb-3">
-          <h5>Destinos</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="./pages/venezuela.html" class="nav-link p-0">Venezuela</a></li>
-            <li class="nav-item mb-2"><a href="./pages/chile.html" class="nav-link p-0">Chile</a></li>
-            <li class="nav-item mb-2"><a href="./pages/peru.html" class="nav-link p-0">Peru</a></li>
-            <li class="nav-item mb-2"><a href="./pages/argentina.html" class="nav-link p-0">Argentina</a></li>
-          </ul>
-        </div>
-    
-        <div class="col mb-3">
-          <h5>Redes Sociales</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="https://es-la.facebook.com/" target="_blank" class="nav-link p-0">Facebook</a></li>
-            <li class="nav-item mb-2"><a href="https://www.instagram.com/" target="_blank" class="nav-link p-0">Instagram</a></li>
-            <li class="nav-item mb-2"><a href="https://twitter.com/?lang=es" target="_blank" class="nav-link p-0">Twitter</a></li>
-            <li class="nav-item mb-2"><a href="https://www.youtube.com/premium" target="_blank" class="nav-link p-0">Youtube</a></li>
-          </ul>
-        </div>
-      </footer>
-
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top textFooter">
+      <div class="col mb-3">
+        <a href="index.html" class="textFooter display-6 d-flex mb-3 text-decoration-none"><img src="media/Logo.png" alt="Logo Gladventures" class="logo"></a>
+      </div>
+  
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-3">
+        <ul class="nav flex-column">
+          <li class="nav-item mx-auto mb-2">Destinos</li>
+          <li class="nav-item mx-auto mb-2"><a href="pages/venezuela.html" class="nav-link p-0">Venezuela</a></li>
+          <li class="nav-item mx-auto mb-2"><a href="pages/chile.html" class="nav-link p-0">Chile</a></li>
+          <li class="nav-item mx-auto mb-2"><a href="pages/peru.html" class="nav-link p-0">Peru</a></li>
+          <li class="nav-item mx-auto mb-2"><a href="pages/argentina.html" class="nav-link p-0">Argentina</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <ul class="nav flex-column">
+          <li class="nav-item mx-auto mb-2">Redes Sociales</li>
+          <li class="nav-item mx-auto mb-2"><a href="https://es-la.facebook.com/" target="_blank" class="nav-link p-0"><img src="media/Facebook.svg" class="icon" alt="Facebook"></a></li>
+          <li class="nav-item mx-auto mb-2"><a href="https://www.instagram.com/" target="_blank" class="nav-link p-0"><img src="media/Instagram.svg" class="icon" alt="Instagram"></a></li>
+          <li class="nav-item mx-auto mb-2"><a href="https://twitter.com/?lang=es" target="_blank" class="nav-link p-0"><img src="media/Twitter.svg" class="icon" alt="Twitter"></a></li>
+          <li class="nav-item mx-auto mb-2"><a href="https://www.youtube.com/premium" target="_blank" class="nav-link p-0"><img src="media/YouTube.svg" class="icon" alt="YouTube"></a></li>
+        </ul>
+  </footer>
         <!--Bootstrap JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

@@ -20,13 +20,18 @@ body{
     .gladContainer{
         margin: 10px 10px 10px 10px;
         padding: 10px 10px 10px 10px;
-        border: 5px solid map-get($map: $palette, $key: 'colorprincipal');
+        border: 5px solid map-get($map: $palette, $key: 'colorsecondary');
         border-radius: 15px;
         .texto{
             font-size: 20px;
         }
         
     }
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
 }
 
 @media screen and (min-width:320px) {
@@ -47,6 +52,12 @@ body{
         display: flex;
         flex-direction: column;
     }
+
+    .texto{
+        margin-top: 15px;
+        padding: 10px;
+    }
+    
     
     /*Para acomodar formulario*/
     
@@ -56,6 +67,7 @@ body{
         display: flex;
         flex-direction: column;
     }
+    
 }
 
 @media screen and (min-width: 768px)  {
@@ -71,8 +83,8 @@ body{
 
 
 .texto{
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
 }
 
 /*Para acomodar formulario*/
@@ -84,3 +96,4 @@ fieldset{
     flex-direction: column;
 }
 }
+

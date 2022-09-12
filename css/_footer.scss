@@ -2,11 +2,12 @@
 
 footer{
     background-color: map-get($map: $palette, $key: 'colorprincipal');
+    align-items: center;
+    align-content: center;
 }
 
 .textFooter{
     color: map-get($map: $palette, $key: 'colorNavFooter');
-    font-weight: bold;
 }
 
 .row{
